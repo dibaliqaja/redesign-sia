@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Home &mdash; Sistem Informasi Akademik Unirow</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+    <!-- CSS Libraries -->
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <!-- Start GA -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-94034622-3');
+    </script>
+    <!-- /END GA -->
+</head>
+
+<body>
+    <div id="app">
+        <div class="main-wrapper main-wrapper-1">
+            <div class="navbar-bg"></div>
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <form class="form-inline mr-auto">
+                    <ul class="navbar-nav mr-3">
+                        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </form>
+                <ul class="navbar-nav navbar-right">
+                    <li class="dropdown"><a href="#" data-toggle="dropdown"
+                            class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                            <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+                            <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-title">Logged in 5 min ago</div>
+                            <a href="features-profile.html" class="dropdown-item has-icon">
+                                <i class="far fa-user"></i> Profile
+                            </a>
+                            <a href="features-activities.html" class="dropdown-item has-icon">
+                                <i class="fas fa-bolt"></i> Aktivitas
+                            </a>
+                            <a href="features-settings.html" class="dropdown-item has-icon">
+                                <i class="fas fa-cog"></i> Pengaturan
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item has-icon text-danger">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main-sidebar sidebar-style-2">
+                <aside id="sidebar-wrapper">
+                    <div class="sidebar-brand">
+                        <a href="index.html">Unirow</a>
+                    </div>
+                    <div class="sidebar-brand sidebar-brand-sm">
+                        <a href="index.html">SIA</a>
+                    </div>
+                    <ul class="sidebar-menu">
+                        <li class=active><a class="nav-link" href="mahasiswa-home.html"><i class="fas fa-fire"></i> <span>Home</span></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i>
+                                <span>Kuesioner</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="bootstrap-alert.html">Layanan Dosen</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" href="#"><i class="fas fa-money-bill-wave"></i> <span>Keuangan</span></a></li>
+                        <li class="menu-header">Akademika</li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-th-large"></i>
+                                <span>Jadwal</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="components-article.html">Jadwal Kuliah</a></li>
+                                <li><a class="nav-link" href="components-avatar.html">Jadwal Ujian Semester</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i>
+                                <span>Kartu Rencana Studi</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="forms-advanced-form.html">Ambil KRS</a></li>
+                                <li><a class="nav-link" href="forms-editor.html">Cetak KRS</a></li>
+                                <li><a class="nav-link" href="forms-validation.html">Hapus KRS</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" href="#"><i class="fas fa-id-card"></i> <span>Kartu Ujian</span></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-sticky-note"></i>
+                                <span>Presensi</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="forms-advanced-form.html">Lihat Presensi</a></li>
+                                <li><a class="nav-link" href="forms-editor.html">Presentase Presensi</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown"><i class="far fa-file-archive"></i>
+                                <span>Mata Kuliah</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="forms-advanced-form.html">Materi Mata Kuliah</a></li>
+                                <li><a class="nav-link" href="forms-editor.html">Tugas Mata Kuliah</a></li>
+                                <li><a class="nav-link" href="forms-validation.html">UTS UAS Mata Kuliah</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" href="#"><i class="fas fa-stop"></i> <span>Pengajuan Cuti</span></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-book"></i>
+                                <span>Tugas Akhir/Skripsi</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="forms-advanced-form.html">Cari Judul</a></li>
+                                <li><a class="nav-link" href="forms-editor.html">Pengajuan Judul</a></li>
+                                <li><a class="nav-link" href="forms-validation.html">UTS UAS Mata Kuliah</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-clipboard"></i>
+                                <span>Nilai</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="forms-advanced-form.html">Kartu Hasil Studi</a></li>
+                                <li><a class="nav-link" href="forms-editor.html">Aktivitas Kuliah Mahasiswa</a></li>
+                                <li><a class="nav-link" href="forms-validation.html">Transkrip Nilai</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" href="#"><i class="fas fa-graduation-cap"></i> <span>Pendaftaran Wisuda</span></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-book-open"></i>
+                                <span>Perpustakaan</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="forms-advanced-form.html">Cari Pustaka</a></li>
+                                <li><a class="nav-link" href="forms-editor.html">History Peminjaman</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <section class="section">
+                    <div class="section-header">
+                        <h1>Sistem Informasi Akademik Kampus</h1>
+                        <div class="section-header-breadcrumb">
+                            <div class="breadcrumb-item active"><a href="mahasiswa-home.html">Home</a></div>
+                        </div>
+                    </div>
+
+                    <div class="section-body">
+                        <h2 class="section-title">Semester Genap 2020/2021</h2>
+                        <p class="section-lead">Program Studi (S1) Teknik Informatika - 55201</p>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Selamat Datang Ujang Maman</h3>
+                            </div>
+                            <div class="card-body">
+                                <b>Selamat Datang</b>
+                                <p>Di Sistem Akademik Kampus Universitas PGRI Ronggolawe. Sistem ini terus dikembangkan sesuai dengan informasi yang terupdate, oleh karena itu saran dan kritikan sangat diperlukan untuk perbaikan dimasa yang akan datang. Semoga dengan kehadiran sistem ini menjadikan Universitas PGRI Ronggolawe akuntabel dalam pengelolaan akademik mahasiswa. Tak lupa ucapan terima kasih kepada PENGEMBANG | Web Design and Development Services.
+                                    Mengganti Password
+                                    Kepada seluruh Mahasiswa agar segera ganti Password-nya demi keamanan
+                                    Logout
+                                    Demi keamanan data di Sistem Akademik Kampus Universitas PGRI Ronggolawe, jangan lupa Logout sebelum meninggalkan komputer yang Anda gunakan
+                                </p>
+                                <b>Mengganti Password</b>
+                                <p>Kepada seluruh Mahasiswa agar segera ganti Password-nya demi keamanan</p>
+                                <b>Logout</b>
+                                <p>Demi keamanan data di Sistem Akademik Kampus Universitas PGRI Ronggolawe, jangan lupa Logout sebelum meninggalkan komputer yang Anda gunakan</p>
+                            </div>
+                            <div class="card-footer">
+                                <p>Salam <br>Rektor,</p></br><br><br><br><br>
+                                <p>Prof. Dr. SUPIANA DIAN NURTJAHYANI, M.Kes. <br>
+                                    NIDN.0021056801
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="main-footer">
+                <div class="footer-left">
+                    Copyright &copy; 2020 <div class="bullet"></div> Universitas PGRI Ronggolawe Tuban</a>
+                </div>
+                <div class="footer-right">
+
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- General JS Scripts -->
+    <script src="assets/modules/jquery.min.js"></script>
+    <script src="assets/modules/popper.js"></script>
+    <script src="assets/modules/tooltip.js"></script>
+    <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="assets/modules/moment.min.js"></script>
+    <script src="assets/js/stisla.js"></script>
+
+    <!-- JS Libraies -->
+
+    <!-- Page Specific JS File -->
+
+    <!-- Template JS File -->
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
