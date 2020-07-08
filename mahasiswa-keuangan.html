@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Home &mdash; Sistem Informasi Akademik Unirow</title>
+    <title>Keuangan &mdash; Sistem Informasi Akademik Unirow</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
 
     <!-- CSS Libraries -->
+    <link rel="stylesheet" href="assets/modules/select2/dist/css/select2.min.css">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -75,7 +76,7 @@
                         <a href="mahasiswa-home.html">SIA</a>
                     </div>
                     <ul class="sidebar-menu">
-                        <li class=active><a class="nav-link" href="mahasiswa-home.html"><i class="fas fa-fire"></i> <span>Home</span></a></li>
+                        <li><a class="nav-link" href="mahasiswa-home.html"><i class="fas fa-fire"></i> <span>Home</span></a></li>
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i>
                                 <span>Kuesioner</span></a>
@@ -158,42 +159,132 @@
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>Sistem Informasi Akademik Kampus</h1>
+                        <h1>Keuangan</h1>
                         <div class="section-header-breadcrumb">
                             <div class="breadcrumb-item active"><a href="mahasiswa-home.html">Home</a></div>
+                            <div class="breadcrumb-item">Keuangan</a></div>
                         </div>
                     </div>
 
                     <div class="section-body">
-                        <h2 class="section-title">Semester Genap 2020/2021</h2>
-                        <p class="section-lead">Program Studi (S1) Teknik Informatika - 55201</p>
-                        <div class="card">
-                            <div class="card-header">
-                                <h3>Selamat Datang Ujang Maman</h3>
-                            </div>
-                            <div class="card-body">
-                                <b>Selamat Datang</b>
-                                <p>Di Sistem Akademik Kampus Universitas PGRI Ronggolawe. Sistem ini terus dikembangkan sesuai dengan informasi yang terupdate, oleh karena itu saran dan kritikan sangat diperlukan untuk perbaikan dimasa yang akan datang. Semoga dengan kehadiran sistem ini menjadikan Universitas PGRI Ronggolawe akuntabel dalam pengelolaan akademik mahasiswa. Tak lupa ucapan terima kasih kepada PENGEMBANG | Web Design and Development Services.
-                                    Mengganti Password
-                                    Kepada seluruh Mahasiswa agar segera ganti Password-nya demi keamanan
-                                    Logout
-                                    Demi keamanan data di Sistem Akademik Kampus Universitas PGRI Ronggolawe, jangan lupa Logout sebelum meninggalkan komputer yang Anda gunakan
-                                </p>
-                                <b>Mengganti Password</b>
-                                <p>Kepada seluruh Mahasiswa agar segera ganti Password-nya demi keamanan</p>
-                                <b>Logout</b>
-                                <p>Demi keamanan data di Sistem Akademik Kampus Universitas PGRI Ronggolawe, jangan lupa Logout sebelum meninggalkan komputer yang Anda gunakan</p>
-                            </div>
-                            <div class="card-footer">
-                                <p>Salam <br>Rektor,</p></br><br><br><br><br>
-                                <p>Prof. Dr. SUPIANA DIAN NURTJAHYANI, M.Kes. <br>
-                                    NIDN.0021056801
-                                </p>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="row m-3">
+                                        <div class="col md-7 col-7 mt-2">
+                                            <h6>Cek Pembayaran Mahasiswa Program Studi S1 Teknik Informatika</h6>
+                                        </div>
+                                        <div class="col md-5 col-5">
+                                            <select name="periode" id="periode" class="form-control select2">
+                                                <option value="">Periode</option>
+                                                <option value="">Semester Ganjil 2020/2021</option>
+                                                <option value="">Semester Genap 2020/2021</option>
+                                                <option value="">Semester Ganjil 2021/2022</option>
+                                                <option value="">Semester Genap 2021/2022</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-bordered">
+                                                <thead>
+                                                <tr align="center">
+                                                    <th colspan="7">Rekap Pembayaran Periode Semester Ganjil 2020/2021</th>
+                                                </tr>
+                                                <tr align="center">
+                                                    <th>No</th>
+                                                    <th>Jenis Biaya</th>
+                                                    <th>Tagihan</th>
+                                                    <th>Bayar</th>
+                                                    <th>Sisa</th>
+                                                </tr>
+                                                </thead>
+                                                <tr align="center">
+                                                    <td>1</td>
+                                                    <td>SPP Bulan April</td>
+                                                    <td>Rp. 350.000</td>
+                                                    <td>-</td>
+                                                    <td>Rp. 350.000</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>2</td>
+                                                    <td>SPP Bulan Mei</td>
+                                                    <td>Rp. 350.000</td>
+                                                    <td>-</td>
+                                                    <td>Rp. 350.000</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>3</td>
+                                                    <td>SPP Bulan Juni</td>
+                                                    <td>Rp. 350.000</td>
+                                                    <td>-</td>
+                                                    <td>Rp. 350.000</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>4</td>
+                                                    <td>SPP Bulan Juli</td>
+                                                    <td>Rp. 350.000</td>
+                                                    <td>-</td>
+                                                    <td>Rp. 350.000</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>5</td>
+                                                    <td>SPP Bulan Agustus</td>
+                                                    <td>Rp. 350.000</td>
+                                                    <td>-</td>
+                                                    <td>Rp. 350.000</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>6</td>
+                                                    <td>Her Registrasi</td>
+                                                    <td>Rp. 350.000</td>
+                                                    <td>-</td>
+                                                    <td>Rp. 350.000</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>7</td>
+                                                    <td>Laboratorium</td>
+                                                    <td>Rp. 350.000</td>
+                                                    <td>-</td>
+                                                    <td>Rp. 350.000</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>8</td>
+                                                    <td>Perpustakaan</td>
+                                                    <td>Rp. 350.000</td>
+                                                    <td>-</td>
+                                                    <td>Rp. 350.000</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>9</td>
+                                                    <td>UTS & UAS</td>
+                                                    <td>Rp. 350.000</td>
+                                                    <td>-</td>
+                                                    <td>Rp. 350.000</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>10</td>
+                                                    <td>Uang Pengembangan</td>
+                                                    <td>Rp. 350.000</td>
+                                                    <td>-</td>
+                                                    <td>Rp. 350.000</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td colspan="2">Jumlah</td>
+                                                    <td>Rp. 4.560.000</td>
+                                                    <td>Rp. 3.100.000</td>
+                                                    <td>Rp. 6.340.000</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
+
             <footer class="main-footer">
                 <div class="footer-left">
                     Copyright &copy; 2020 <div class="bullet"></div> Universitas PGRI Ronggolawe Tuban</a>
@@ -215,6 +306,7 @@
     <script src="assets/js/stisla.js"></script>
 
     <!-- JS Libraies -->
+    <script src="assets/modules/select2/dist/js/select2.full.min.js"></script>
 
     <!-- Page Specific JS File -->
 
