@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Home &mdash; Sistem Informasi Akademik Unirow</title>
+    <title>Hapus KRS &mdash; Sistem Informasi Akademik Unirow</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
 
     <!-- CSS Libraries -->
+    <link rel="stylesheet" href="assets/modules/select2/dist/css/select2.min.css">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -75,7 +76,7 @@
                         <a href="mahasiswa-home.html">SIA</a>
                     </div>
                     <ul class="sidebar-menu">
-                        <li class=active><a class="nav-link" href="mahasiswa-home.html"><i class="fas fa-fire"></i> <span>Home</span></a></li>
+                        <li><a class="nav-link" href="mahasiswa-home.html"><i class="fas fa-fire"></i> <span>Home</span></a></li>
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i>
                                 <span>Kuesioner</span></a>
@@ -93,13 +94,13 @@
                                 <li><a class="nav-link" href="mahasiswa-jadwal-ujian-semester.html">Jadwal Ujian Semester</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <li class="dropdown active">
                             <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i>
                                 <span>Kartu Rencana Studi</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="mahasiswa-ambil-krs.html">Ambil KRS</a></li>
                                 <li><a class="nav-link" href="mahasiswa-cetak-krs.html">Cetak KRS</a></li>
-                                <li><a class="nav-link" href="mahasiswa-hapus-krs.html">Hapus KRS</a></li>
+                                <li class="active"><a class="nav-link" href="mahasiswa-hapus-krs.html">Hapus KRS</a></li>
                             </ul>
                         </li>
                         <li><a class="nav-link" href="#"><i class="fas fa-id-card"></i> <span>Kartu Ujian</span></a></li>
@@ -158,42 +159,108 @@
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>Sistem Informasi Akademik Kampus</h1>
+                        <h1>Hapus KRS</h1>
                         <div class="section-header-breadcrumb">
                             <div class="breadcrumb-item active"><a href="mahasiswa-home.html">Home</a></div>
+                            <div class="breadcrumb-item active"><a href="#">Kartu Rencana Studi</a></div>
+                            <div class="breadcrumb-item">Hapus KRS</a></div>
                         </div>
                     </div>
 
                     <div class="section-body">
-                        <h2 class="section-title">Semester Genap 2020/2021</h2>
-                        <p class="section-lead">Program Studi (S1) Teknik Informatika - 55201</p>
                         <div class="card">
-                            <div class="card-header">
-                                <h3>Selamat Datang Ujang Maman</h3>
-                            </div>
-                            <div class="card-body">
-                                <b>Selamat Datang</b>
-                                <p>Di Sistem Akademik Kampus Universitas PGRI Ronggolawe. Sistem ini terus dikembangkan sesuai dengan informasi yang terupdate, oleh karena itu saran dan kritikan sangat diperlukan untuk perbaikan dimasa yang akan datang. Semoga dengan kehadiran sistem ini menjadikan Universitas PGRI Ronggolawe akuntabel dalam pengelolaan akademik mahasiswa. Tak lupa ucapan terima kasih kepada PENGEMBANG | Web Design and Development Services.
-                                    Mengganti Password
-                                    Kepada seluruh Mahasiswa agar segera ganti Password-nya demi keamanan
-                                    Logout
-                                    Demi keamanan data di Sistem Akademik Kampus Universitas PGRI Ronggolawe, jangan lupa Logout sebelum meninggalkan komputer yang Anda gunakan
-                                </p>
-                                <b>Mengganti Password</b>
-                                <p>Kepada seluruh Mahasiswa agar segera ganti Password-nya demi keamanan</p>
-                                <b>Logout</b>
-                                <p>Demi keamanan data di Sistem Akademik Kampus Universitas PGRI Ronggolawe, jangan lupa Logout sebelum meninggalkan komputer yang Anda gunakan</p>
-                            </div>
-                            <div class="card-footer">
-                                <p>Salam <br>Rektor,</p></br><br><br><br><br>
-                                <p>Prof. Dr. SUPIANA DIAN NURTJAHYANI, M.Kes. <br>
-                                    NIDN.0021056801
-                                </p>
+                            <div class="p-3">
+                                <div class="row">
+                                    <div class="col-md-5 mb-3">
+                                        <select name="cari" class="form-control select2">
+                                            <option value="">Pilih Tahun Ajaran</option>
+                                            <option value="">Semester Ganjil 2019/2020</option>
+                                            <option value="">Semester Genap 2019/2020</option>
+                                            <option value="">Semester Ganjil 2020/2021</option>
+                                            <option value="">Semester Genap 2020/2021</option>
+                                            <option value="">Semester Ganjil 2021/2022</option>
+                                            <option value="">Semester Genap 2021/2022</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-5 mt-1 mb-3">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                    <div class="col-md-2 mt-1 mb-3">
+                                        <button type="submit" class="btn btn-info">Hapus KRS</button>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-bordered">
+                                        <thead>
+                                        <tr align="center">
+                                            <th colspan="7">Semester IV</th>
+                                        </tr>
+                                        <tr align="center">
+                                            <th>No</th>
+                                            <th>Kode MK</th>
+                                            <th>Mata Kuliah</th>
+                                            <th>Dosen</th>
+                                            <th>SKS</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tr align="center">
+                                            <td>1</td>
+                                            <td>UNV4101</td>
+                                            <td>Kewirausahaan</td>
+                                            <td>Jajang Wariman, ST., MT.</td>
+                                            <td>2</td>
+                                            <td>PENGAJUAN</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>2</td>
+                                            <td>IF4301</td>
+                                            <td>Sistem Operasi</td>
+                                            <td>Jajang Wariman, ST., MT.</td>
+                                            <td>3</td>
+                                            <td>PENGAJUAN</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>3</td>
+                                            <td>IF4201</td>
+                                            <td>Multimedia</td>
+                                            <td>Adi Gumilang, S.T, M.T.</td>
+                                            <td>2</td>
+                                            <td>PENGAJUAN</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>4</td>
+                                            <td>IF4303</td>
+                                            <td>Praktikum Machine Learning</td>
+                                            <td>Finda Gamalama, M.Pd.</td>
+                                            <td>2</td>
+                                            <td>PENGAJUAN</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>5</td>
+                                            <td>IF4399</td>
+                                            <td>Data Science</td>
+                                            <td>Agung Gumelar, S.Si, Ph.D.</td>
+                                            <td>3</td>
+                                            <td>PENGAJUAN</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>6</td>
+                                            <td>IF3211</td>
+                                            <td>Artificial Intelligence</td>
+                                            <td>Jajang Wariman, ST., MT.</td>
+                                            <td>3</td>
+                                            <td>PENGAJUAN</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </section>
             </div>
+
             <footer class="main-footer">
                 <div class="footer-left">
                     Copyright &copy; 2020 <div class="bullet"></div> Universitas PGRI Ronggolawe Tuban</a>
@@ -215,6 +282,7 @@
     <script src="assets/js/stisla.js"></script>
 
     <!-- JS Libraies -->
+    <script src="assets/modules/select2/dist/js/select2.full.min.js"></script>
 
     <!-- Page Specific JS File -->
 

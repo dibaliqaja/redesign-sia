@@ -56,7 +56,7 @@
                             <a href="mahasiswa-aktivitas.html" class="dropdown-item has-icon">
                                 <i class="fas fa-bolt"></i> Aktivitas
                             </a>
-                            <a href="mahasiswa-pengaturan" class="dropdown-item has-icon">
+                            <a href="mahasiswa-pengaturan.html" class="dropdown-item has-icon">
                                 <i class="fas fa-cog"></i> Ubah Password
                             </a>
                             <div class="dropdown-divider"></div>
@@ -84,7 +84,7 @@
                                 <li><a class="nav-link" href="mahasiswa-layanan-dosen.html">Layanan Dosen</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-link" href="mahasiswa-keuangan.html"><i class="fas fa-money-bill-wave"></i> <span>Keuangan</span></a></li>
+                        <li class="active"><a class="nav-link" href="mahasiswa-keuangan.html"><i class="fas fa-money-bill-wave"></i> <span>Keuangan</span></a></li>
                         <li class="menu-header">Akademika</li>
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-th-large"></i>
@@ -98,7 +98,7 @@
                             <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i>
                                 <span>Kartu Rencana Studi</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="mahasiswa-ambl-krs.html">Ambil KRS</a></li>
+                                <li><a class="nav-link" href="mahasiswa-ambil-krs.html">Ambil KRS</a></li>
                                 <li><a class="nav-link" href="mahasiswa-cetak-krs.html">Cetak KRS</a></li>
                                 <li><a class="nav-link" href="mahasiswa-hapus-krs.html">Hapus KRS</a></li>
                             </ul>
@@ -167,121 +167,118 @@
                     </div>
 
                     <div class="section-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="row m-3">
-                                        <div class="col md-7 col-7 mt-2">
-                                            <h6>Cek Pembayaran Mahasiswa Program Studi S1 Teknik Informatika</h6>
-                                        </div>
-                                        <div class="col md-5 col-5">
-                                            <select name="periode" id="periode" class="form-control select2">
-                                                <option value="">Periode</option>
-                                                <option value="">Semester Ganjil 2020/2021</option>
-                                                <option value="">Semester Genap 2020/2021</option>
-                                                <option value="">Semester Ganjil 2021/2022</option>
-                                                <option value="">Semester Genap 2021/2022</option>
-                                            </select>
-                                        </div>
+                        <div class="card">
+                            <div class="p-3">
+                                <div class="row">
+                                    <div class="col-md-5 mb-3">
+                                        <select name="cari" class="form-control select2">
+                                            <option value="">Periode</option>
+                                            <option value="">Semester Ganjil 2020/2021</option>
+                                            <option value="">Semester Genap 2020/2021</option>
+                                            <option value="">Semester Ganjil 2021/2022</option>
+                                            <option value="">Semester Genap 2021/2022</option>
+                                        </select>
                                     </div>
-                                    <div class="card-body p-0">
-                                        <div class="table-responsive">
-                                            <table class="table table-hover table-bordered">
-                                                <thead>
-                                                <tr align="center">
-                                                    <th colspan="7">Rekap Pembayaran Periode Semester Ganjil 2020/2021</th>
-                                                </tr>
-                                                <tr align="center">
-                                                    <th>No</th>
-                                                    <th>Jenis Biaya</th>
-                                                    <th>Tagihan</th>
-                                                    <th>Bayar</th>
-                                                    <th>Sisa</th>
-                                                </tr>
-                                                </thead>
-                                                <tr align="center">
-                                                    <td>1</td>
-                                                    <td>SPP Bulan April</td>
-                                                    <td>Rp. 350.000</td>
-                                                    <td>-</td>
-                                                    <td>Rp. 350.000</td>
-                                                </tr>
-                                                <tr align="center">
-                                                    <td>2</td>
-                                                    <td>SPP Bulan Mei</td>
-                                                    <td>Rp. 350.000</td>
-                                                    <td>-</td>
-                                                    <td>Rp. 350.000</td>
-                                                </tr>
-                                                <tr align="center">
-                                                    <td>3</td>
-                                                    <td>SPP Bulan Juni</td>
-                                                    <td>Rp. 350.000</td>
-                                                    <td>-</td>
-                                                    <td>Rp. 350.000</td>
-                                                </tr>
-                                                <tr align="center">
-                                                    <td>4</td>
-                                                    <td>SPP Bulan Juli</td>
-                                                    <td>Rp. 350.000</td>
-                                                    <td>-</td>
-                                                    <td>Rp. 350.000</td>
-                                                </tr>
-                                                <tr align="center">
-                                                    <td>5</td>
-                                                    <td>SPP Bulan Agustus</td>
-                                                    <td>Rp. 350.000</td>
-                                                    <td>-</td>
-                                                    <td>Rp. 350.000</td>
-                                                </tr>
-                                                <tr align="center">
-                                                    <td>6</td>
-                                                    <td>Her Registrasi</td>
-                                                    <td>Rp. 350.000</td>
-                                                    <td>-</td>
-                                                    <td>Rp. 350.000</td>
-                                                </tr>
-                                                <tr align="center">
-                                                    <td>7</td>
-                                                    <td>Laboratorium</td>
-                                                    <td>Rp. 350.000</td>
-                                                    <td>-</td>
-                                                    <td>Rp. 350.000</td>
-                                                </tr>
-                                                <tr align="center">
-                                                    <td>8</td>
-                                                    <td>Perpustakaan</td>
-                                                    <td>Rp. 350.000</td>
-                                                    <td>-</td>
-                                                    <td>Rp. 350.000</td>
-                                                </tr>
-                                                <tr align="center">
-                                                    <td>9</td>
-                                                    <td>UTS & UAS</td>
-                                                    <td>Rp. 350.000</td>
-                                                    <td>-</td>
-                                                    <td>Rp. 350.000</td>
-                                                </tr>
-                                                <tr align="center">
-                                                    <td>10</td>
-                                                    <td>Uang Pengembangan</td>
-                                                    <td>Rp. 350.000</td>
-                                                    <td>-</td>
-                                                    <td>Rp. 350.000</td>
-                                                </tr>
-                                                <tr align="center">
-                                                    <td colspan="2">Jumlah</td>
-                                                    <td>Rp. 4.560.000</td>
-                                                    <td>Rp. 3.100.000</td>
-                                                    <td>Rp. 6.340.000</td>
-                                                </tr>
-                                            </table>
-                                        </div>
+                                    <div class="col-md-5 mt-1 mb-3">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-bordered">
+                                        <thead>
+                                        <tr align="center">
+                                            <th colspan="7">Rekap Pembayaran Periode Semester Ganjil 2020/2021</th>
+                                        </tr>
+                                        <tr align="center">
+                                            <th>No</th>
+                                            <th>Jenis Biaya</th>
+                                            <th>Tagihan</th>
+                                            <th>Bayar</th>
+                                            <th>Sisa</th>
+                                        </tr>
+                                        </thead>
+                                        <tr align="center">
+                                            <td>1</td>
+                                            <td>SPP Bulan April</td>
+                                            <td>Rp. 350.000</td>
+                                            <td>-</td>
+                                            <td>Rp. 350.000</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>2</td>
+                                            <td>SPP Bulan Mei</td>
+                                            <td>-</td>
+                                            <td>Rp. 350.000</td>
+                                            <td>Rp. 350.000</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>3</td>
+                                            <td>SPP Bulan Juni</td>
+                                            <td>Rp. 350.000</td>
+                                            <td>-</td>
+                                            <td>Rp. 350.000</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>4</td>
+                                            <td>SPP Bulan Juli</td>
+                                            <td>Rp. 350.000</td>
+                                            <td>Rp. 350.000</td>
+                                            <td>Rp. 350.000</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>5</td>
+                                            <td>SPP Bulan Agustus</td>
+                                            <td>Rp. 350.000</td>
+                                            <td>-</td>
+                                            <td>Rp. 350.000</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>6</td>
+                                            <td>Her Registrasi</td>
+                                            <td>Rp. 350.000</td>
+                                            <td>Rp. 350.000</td>
+                                            <td>Rp. 350.000</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>7</td>
+                                            <td>Laboratorium</td>
+                                            <td>Rp. 350.000</td>
+                                            <td>-</td>
+                                            <td>Rp. 350.000</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>8</td>
+                                            <td>Perpustakaan</td>
+                                            <td>Rp. 350.000</td>
+                                            <td>-</td>
+                                            <td>Rp. 350.000</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>9</td>
+                                            <td>UTS & UAS</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>Rp. 350.000</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td>10</td>
+                                            <td>Uang Pengembangan</td>
+                                            <td>Rp. 350.000</td>
+                                            <td>-</td>
+                                            <td>Rp. 350.000</td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td colspan="2">Jumlah</td>
+                                            <td>Rp. 4.560.000</td>
+                                            <td>Rp. 3.100.000</td>
+                                            <td>Rp. 6.340.000</td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </section>
             </div>
 

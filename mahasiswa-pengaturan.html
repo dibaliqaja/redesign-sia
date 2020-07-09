@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Home &mdash; Sistem Informasi Akademik Unirow</title>
+    <title>Ubah Password &mdash; Sistem Informasi Akademik Unirow</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
 
     <!-- CSS Libraries -->
+    <link rel="stylesheet" href="assets/modules/select2/dist/css/select2.min.css">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -75,7 +76,7 @@
                         <a href="mahasiswa-home.html">SIA</a>
                     </div>
                     <ul class="sidebar-menu">
-                        <li class=active><a class="nav-link" href="mahasiswa-home.html"><i class="fas fa-fire"></i> <span>Home</span></a></li>
+                        <li><a class="nav-link" href="mahasiswa-home.html"><i class="fas fa-fire"></i> <span>Home</span></a></li>
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i>
                                 <span>Kuesioner</span></a>
@@ -158,37 +159,31 @@
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>Sistem Informasi Akademik Kampus</h1>
+                        <h1>Ubah Password</h1>
                         <div class="section-header-breadcrumb">
                             <div class="breadcrumb-item active"><a href="mahasiswa-home.html">Home</a></div>
+                            <div class="breadcrumb-item">Ubah Password</a></div>
                         </div>
                     </div>
 
                     <div class="section-body">
-                        <h2 class="section-title">Semester Genap 2020/2021</h2>
-                        <p class="section-lead">Program Studi (S1) Teknik Informatika - 55201</p>
                         <div class="card">
-                            <div class="card-header">
-                                <h3>Selamat Datang Ujang Maman</h3>
-                            </div>
-                            <div class="card-body">
-                                <b>Selamat Datang</b>
-                                <p>Di Sistem Akademik Kampus Universitas PGRI Ronggolawe. Sistem ini terus dikembangkan sesuai dengan informasi yang terupdate, oleh karena itu saran dan kritikan sangat diperlukan untuk perbaikan dimasa yang akan datang. Semoga dengan kehadiran sistem ini menjadikan Universitas PGRI Ronggolawe akuntabel dalam pengelolaan akademik mahasiswa. Tak lupa ucapan terima kasih kepada PENGEMBANG | Web Design and Development Services.
-                                    Mengganti Password
-                                    Kepada seluruh Mahasiswa agar segera ganti Password-nya demi keamanan
-                                    Logout
-                                    Demi keamanan data di Sistem Akademik Kampus Universitas PGRI Ronggolawe, jangan lupa Logout sebelum meninggalkan komputer yang Anda gunakan
-                                </p>
-                                <b>Mengganti Password</b>
-                                <p>Kepada seluruh Mahasiswa agar segera ganti Password-nya demi keamanan</p>
-                                <b>Logout</b>
-                                <p>Demi keamanan data di Sistem Akademik Kampus Universitas PGRI Ronggolawe, jangan lupa Logout sebelum meninggalkan komputer yang Anda gunakan</p>
-                            </div>
-                            <div class="card-footer">
-                                <p>Salam <br>Rektor,</p></br><br><br><br><br>
-                                <p>Prof. Dr. SUPIANA DIAN NURTJAHYANI, M.Kes. <br>
-                                    NIDN.0021056801
-                                </p>
+                            <div class="p-3">
+                                <div class="form-group col-md-6">
+                                    <label for="">Password Lama</label>
+                                    <input type="password" class="form-control" name="old_password" value="0000000">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="">Password Baru</label>
+                                    <input type="password" class="form-control" name="new_password" value="00000000000">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="">Ulangi Password Baru</label>
+                                    <input type="password" class="form-control" name="new_password_confirmation" value="00000000000">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="submit" class="btn btn-primary" value="Update">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -215,6 +210,7 @@
     <script src="assets/js/stisla.js"></script>
 
     <!-- JS Libraies -->
+    <script src="assets/modules/select2/dist/js/select2.full.min.js"></script>
 
     <!-- Page Specific JS File -->
 
