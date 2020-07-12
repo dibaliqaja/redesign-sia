@@ -1047,7 +1047,8 @@ table tr:hover .table-links {
 
 /* 3.10 Pagination */
 .page-item .page-link {
-  color: #6777ef;
+  color: #fff;
+  background-color: #31313a;
   border-radius: 3px;
   margin: 0 3px; }
 .page-item.active .page-link {
@@ -1055,8 +1056,8 @@ table tr:hover .table-links {
   border-color: #6777ef; }
 .page-item.disabled .page-link {
   border-color: transparent;
-  background-color: #f9fafe;
-  color: #6777ef;
+  background-color: #23252b;
+  color: #ffffff;
   opacity: .6; }
 
 .page-link {
