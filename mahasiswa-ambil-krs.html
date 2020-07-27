@@ -42,6 +42,14 @@
                                     class="fas fa-bars"></i></a></li>
                     </ul>
                 </form>
+
+                <label class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-switch-input" id="darkSwitch">
+                    <span class="custom-switch-indicator"></span>
+                    <span class="custom-switch-description" id="mode"></span>
+                </label>
+                <script src="assets/js/dark-mode-switch.js"></script>
+                
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown"><a href="#" data-toggle="dropdown"
                             class="nav-link dropdown-toggle nav-link-lg nav-link-user">
@@ -70,10 +78,14 @@
             <div class="main-sidebar sidebar-style-2">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
-                        <a href="mahasiswa-home.html">Unirow</a>
+                        <a href="mahasiswa-home.html">
+                            <img alt="image" width="40px" src="assets/img/logo.png"><p>UNIROW</p>
+                        </a>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
-                        <a href="mahasiswa-home.html">SIA</a>
+                        <a href="mahasiswa-home.html">
+                            <img alt="image" width="40px" src="assets/img/logo.png">
+                        </a>
                     </div>
                     <ul class="sidebar-menu">
                         <li><a class="nav-link" href="mahasiswa-home.html"><i class="fas fa-fire"></i> <span>Home</span></a></li>
@@ -172,7 +184,7 @@
                             <div class="p-3">
                                 <div class="row">
                                     <div class="col-md-3 mb-3">
-                                        <select name="cari" class="form-control select2">
+                                        <select name="semester" id="semester" class="form-control select2">
                                             <option value="">Pilih Semester</option>
                                             <option value="">Semester I</option>
                                             <option value="">Semester II</option>
@@ -184,7 +196,7 @@
                                         </select>
                                     </div>
                                     <div class="col-md-4 mt-1 mb-3">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                                     </div>
                                     <div class="col-md-3 mb-3">
                                         <select name="cari" class="form-control select2">
@@ -201,101 +213,6 @@
                                     <div class="col-md-2 mt-1 mb-3 float-right">
                                         <a href="mahasiswa-hapus-krs.html" type="submit" class="btn btn-info">Ambil KRS</a>
                                     </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-bordered">
-                                        <thead>
-                                        <tr align="center">
-                                            <th colspan="7">Semester IV</th>
-                                        </tr>
-                                        <tr align="center">
-                                            <th>No</th>
-                                            <th>Kode MK</th>
-                                            <th>Mata Kuliah</th>
-                                            <th>Dosen</th>
-                                            <th>SKS</th>
-                                            <th>Pilih</th>
-                                        </tr>
-                                        </thead>
-                                        <tr align="center">
-                                            <td>1</td>
-                                            <td>UNV4101</td>
-                                            <td>Kewirausahaan</td>
-                                            <td>Jajang Wariman, ST., MT.</td>
-                                            <td>2</td>
-                                            <td>
-                                                <div class="custom-checkbox custom-control ml-2">
-                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-1">
-                                                    <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr align="center">
-                                            <td>2</td>
-                                            <td>IF4301</td>
-                                            <td>Sistem Operasi</td>
-                                            <td>Jajang Wariman, ST., MT.</td>
-                                            <td>3</td>
-                                            <td>
-                                                <div class="custom-checkbox custom-control ml-2">
-                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-2">
-                                                    <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr align="center">
-                                            <td>3</td>
-                                            <td>IF4201</td>
-                                            <td>Multimedia</td>
-                                            <td>Adi Gumilang, S.T, M.T.</td>
-                                            <td>2</td>
-                                            <td>
-                                                <div class="custom-checkbox custom-control ml-2">
-                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-3">
-                                                    <label for="checkbox-3" class="custom-control-label">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr align="center">
-                                            <td>4</td>
-                                            <td>IF4303</td>
-                                            <td>Praktikum Machine Learning</td>
-                                            <td>Finda Gamalama, M.Pd.</td>
-                                            <td>2</td>
-                                            <td>
-                                                <div class="custom-checkbox custom-control ml-2">
-                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-4">
-                                                    <label for="checkbox-4" class="custom-control-label">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr align="center">
-                                            <td>5</td>
-                                            <td>IF4399</td>
-                                            <td>Data Science</td>
-                                            <td>Agung Gumelar, S.Si, Ph.D.</td>
-                                            <td>3</td>
-                                            <td>
-                                                <div class="custom-checkbox custom-control ml-2">
-                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-5">
-                                                    <label for="checkbox-5" class="custom-control-label">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr align="center">
-                                            <td>6</td>
-                                            <td>IF3211</td>
-                                            <td>Artificial Intelligence</td>
-                                            <td>Jajang Wariman, ST., MT.</td>
-                                            <td>3</td>
-                                            <td>
-                                                <div class="custom-checkbox custom-control ml-2">
-                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-6">
-                                                    <label for="checkbox-6" class="custom-control-label">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -328,6 +245,11 @@
     <script src="assets/modules/select2/dist/js/select2.full.min.js"></script>
 
     <!-- Page Specific JS File -->
+    <script>
+        $('#semester').on("select2:select", function(e) {
+            location.replace('mahasiswa-ambil.html')
+        });
+    </script>
 
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
